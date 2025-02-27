@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Jacob the Dog VS Hungry Slimes!</title>
+        <link rel="stylesheet" 
+            href="{{ url_for('static', filename='game.css')}}" />
+        <!-- <link rel="stylesheet" 
+            href="{{ url_for('static', filename='particles.css')}}" />
+        <script src="{{ url_for('static', filename='asteroid.js') }}"
+                type="module">
+        </script> -->
+    </head>
+    <body>
+        <h1>Welcome to Jacob the dog VS the Hungry Slimes!</h1>
+        <p>
+            <b><a href="{{ url_for('game') }}">PLAY NOW</a></b>
+        </p>
+        <b>Instructions:</b>
+        <p>As the player, use arrow keys to move and the space bar to shoot at the slimes!</p>
+        <p>Shoot(or feed) as many slimes as you can!</p>
+        <p>If you lose all of your health, you lose!</p>
+        <p>There are powerups scattered around the map!</p>
+    </body>
+</html>

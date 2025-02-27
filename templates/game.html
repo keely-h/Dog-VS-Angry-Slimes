@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Jacob the Dog VS Hungry Slimes!</title>
+        <link rel="stylesheet" 
+            href="{{ url_for('static', filename='game.css')}}" />
+        <script src="{{ url_for('static', filename='gaming.js') }}"
+            type="module">
+        </script>
+    </head>
+    <!-- width - 32 x 24 height 32 x 18 -->
+    <body>
+        <canvas width="1024" height="640">
+        </canvas>
+        <a href="{{ url_for('game') }}">Play again?</a>
+        <p id="outcome"></p>
+        <p>All images and sprites were created and drawn by me.</p>
+    </body>
+</html>
